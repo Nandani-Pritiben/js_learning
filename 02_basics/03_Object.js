@@ -2,6 +2,8 @@
 
 //Object Literals
 
+const o={};
+console.log(o);
 const mysym = Symbol("key1");
 
 const JSUser={
