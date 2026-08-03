@@ -66,7 +66,10 @@ const course={
 
 // console.log(course.courseInstroctor);
 
+//Object destructuring is a JavaScript shorthand syntax that lets you unpack properties from an object and assign them directly to distinct variables. 
+
 const {courseInstroctor:intructor}=course;
 console.log(intructor);
 
+//each other, while JSON is the specific language format that the messenger uses to deliver the data.
 
