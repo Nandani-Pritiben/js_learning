@@ -1,0 +1,72 @@
+JavaScript Execution Context
+
+{} Global FC
+
+⬆️ this 
+
+Types of Execution Context
+
+1. Global Execution Context
+2. Functional Execution Context
+3. Eval Execution Context
+
+{} -> Memory Creation Phase - var and code allocate Memory not execute
+
+     Execution Phase
+
+     Global Execution Phase first Execution in this and then Memory Phase and Execution phase
+
+Example:-
+
+Example code-
+let val1 = 5;
+let val2 = 10;
+function addNum(num1,num2){
+let total=num1 + num2;
+return total;
+}
+let result1=addNum(val1,val2);
+let result2 = addNum(5,9);
+
+How Execute this-
+
+Global Execution Context-
+1. this keyword allocate all code first in this
+2. Memory Phase - val1 = undefinned
+  val2= undefinned
+  function addNum = definition
+  result1 = undefinned
+  result2 = undefinned
+
+3. Execution context-
+val1=5
+val2=10
+function not execute here this in store for definition in memory only
+let result1 = addNum -> New Environ variable + Execution thread execute addNum when function execute then make memory phase and execution context  again make-
+
+let result2 = addNum
+memory phase-
+going to function -  
+val1=undefinned
+val2=undefinned
+total=undefined 
+
+
+Execution Phase- 
+num1 = 5
+num2 = 10
+total = 15  operational  calcution in phase
+return total in global execution so now in
+
+result1 =15
+
+again for new variable Environment + execution thread
+
+again take memory + execution context and return result2=14
+
+    ^  LIFO
+|   |       |
+| fun3      |
+| fun2      |
+| fun1      | <- Stack
+-------------
