@@ -1,0 +1,2 @@
+falsy values- 0,-0,'',false, BigInt 0n,undefined ,NaN,null
+Truthy value- '0','false',[],{},function(){},
